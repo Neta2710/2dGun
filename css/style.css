@@ -1,0 +1,327 @@
+* {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+
+#fond_noir {  
+  position: absolute;
+  justify-content: center;
+  width: 1000px;
+  height: 1000px;
+  background-color: black;
+}
+
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.board {
+  margin: 80px 40px;
+  /* cursor: url(../assets/images/gun\ 3d.png) 81 40, auto; */
+  top: 13.144058885383807vh;
+  position: absolute;
+  background-color: black;
+  width: 49.27676240208877vw;
+  height: 69.44374342797056vh;
+  left: 6.31246712256707vw;
+  border: 5px black solid;
+  border-radius: 10px;
+}
+
+.main {
+  margin: 80px 0px;
+  border-radius: 10px;
+  right: 16.701461377870565vw;
+  top: 13.144058885383807vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.48);
+  width: 14.375326711970727vw;
+  height: 69.44374342797056vh;
+  border: 1px solid;
+}
+
+
+.settings {
+  border: 2px solid;
+  left: 1.0454783063251438vw;
+  width: 12.284370099320439vw;
+  height: 9.989484752891693vh;
+  margin: 1.6824395373291272vh 0px;
+  background-color: white;
+  position: relative;
+}
+
+footer {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area {
+  top: 0px;
+  height: 130px;
+  width: 2410px;
+  position: fixed;
+  font-size: 6.5em;
+  color: rgb(237, 253, 7);
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: 3s ease-out 0s infinite normal none running blur;
+  text-shadow: rgb(255 255 255) 0px 0px 5px, rgb(255 255 255) 0px 0px 7px;
+  left: -420px;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px -5px 50px #7B96B8;
+  }
+}
+
+#fond {
+  background-color: black;
+}
+
+#centre {
+ margin: 45px 0px;
+}
+
+#return {
+  left: -10px;
+  transform: scaleX(-1);
+  position: relative;
+}
+
+body {
+  background-image: url(../asset/images/fond.jpg);
+  background-repeat: repeat;
+  background-size:auto;
+}
+
+.military {
+  position: relative !important;
+  left: 1005px !important;
+}
+
+
+#military {
+  left: -30px;
+  position: relative;
+}
+
+.startbtn {
+  border-radius: 10px;
+  top: 275px;
+  left: -2px;
+  width: 240px;
+  font-size: 42px;
+  position: relative;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 0;
+  height: 100px;
+}
+
+.startbtn:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.startbtn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.startbtn:active {
+  color: #000
+}
+
+.startbtn:active:after {
+  background: transparent;
+}
+
+.startbtn:hover:before {
+  opacity: 1;
+}
+
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+#visible {
+  top: 215px;
+  left: 1000px;
+  display: none;
+  width: 375px;
+  height: 650px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+#boutique {
+  color: #48ff00;
+  text-decoration: underline;
+}
+
+#money {
+  position: fixed;
+  right: 0px;
+  top: -50px;
+}
+ 
+#howMoney {
+  position: relative;
+  top: -8px;
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+
+#close {
+  left: 175px;
+  position: relative;
+  top: -25px;
+}
+
+#scroll {
+  margin: 40px 0px;
+  background-color: rgba(0, 0, 0, 0.281);
+  height: 559px;
+  overflow-y: scroll;
+}
+
+@media (hover: hover) {
+  #creditcard {
+    /*  set start position */
+    transform: translateY(110px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  #money {
+    /*  set start position */
+    transform: translateY(180px);
+    transition: transform 0.1s ease-in-out;
+    /*  set transition for mouse enter & exit */
+  }
+
+  button:hover #creditcard {
+    transform: translateY(0px);
+    transition: transform 0.2s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+
+  button:hover #money {
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+    /*  overide transition for mouse enter */
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button:hover .button__text span {
+  transform: translateY(-0.25rem);
+  transition: transform .2s ease-in-out;
+}
+
+/* styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  top: 20px;
+  border: none;
+  outline: none;
+  background-color: purple;
+  padding: 1rem 90px 1rem 2rem;
+  position: relative;
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  background-color: #5086bd;
+  color: #fff;
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button__svg {
+  position: absolute;
+  overflow: visible;
+  bottom: 6px;
+  right: 0.2rem;
+  height: 140%;
+}
