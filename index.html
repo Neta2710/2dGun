@@ -19,15 +19,15 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>⚠2D Gun⚠</title>
-    <style>
+    <!-- <style>
       @font-face {
         font-family: Minecraft;
-        src: url("assets/font/Minecraft.ttf");
+        src: url("asset/font/Minecraft.ttf");
       }
       * {
         font-family: Minecraft;
       }
-    </style>
+    </style> -->
   </head>
   <header>
   
@@ -48,7 +48,9 @@
     <div id="scroll"> </div>
     </div>
     <div id="money"><span id="howMoney">0</span><img src="asset/images/coin.png" alt="" width="50px" height="50px" id="coin"></div>
-    <div class="board"><button class="startbtn" class="wtf">START</button> </div>
+    <!-- <div class="board"> </div> -->
+    <button class="startbtn" class="wtf" id="invisible"onclick="Start()">START</button>
+    <canvas id="myCanvas"></canvas>
     <div class="main">
         <div id="centre">
       <div class="score settings">Score : <span id="score">0</span></div>
@@ -110,7 +112,7 @@
     <footer>
       <p id="msl">
         Copyright 2022 © by
-        <a href="mailto:ethanallouche2506@gmail.com">Netanael avec l'aide de Ethan</a>
+        <a href="mailto:ethanallouche2506@gmail.com">Ethan</a>
       </p>
     </footer>
 

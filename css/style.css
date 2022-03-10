@@ -135,9 +135,10 @@ body {
 }
 
 .startbtn {
+  z-index: 1;
   border-radius: 10px;
-  top: 275px;
-  left: -2px;
+  top: 50px;
+  left: -310px;
   width: 240px;
   font-size: 42px;
   position: relative;
@@ -146,7 +147,6 @@ body {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   cursor: pointer;
-  z-index: 0;
   height: 100px;
 }
 
@@ -325,3 +325,14 @@ body {
   right: 0.2rem;
   height: 140%;
 }
+
+canvas {
+    margin: 80px 40px;
+    top: 13.144058885383807vh;
+    position: absolute;
+    background-color: black;
+    left: 6.31246712256707vw;
+    border: 5px black solid;
+    border-radius: 10px;
+}
+
